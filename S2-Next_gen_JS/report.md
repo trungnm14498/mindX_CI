@@ -1,5 +1,5 @@
 **Câu 1:** `var` khai báo một biến có phạm vi trong block?
-1. True
+1. False
 
 **Câu 2:** `const` khai báo một biến có phạm vi trong block?
 1. True
