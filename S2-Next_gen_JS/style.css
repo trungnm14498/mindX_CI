@@ -92,4 +92,6 @@ button {
 .hidden {
     opacity: 0;
     visibility: hidden;
+    height: 0px;
+    padding: 0;
 }

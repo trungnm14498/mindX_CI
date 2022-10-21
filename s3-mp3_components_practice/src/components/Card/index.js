@@ -2,47 +2,25 @@ import './card_style.css'
 import {Status} from '../Status'
 
 function SongCard(props) {
-    if (props.status) {
-        return (
-            <div className="card">
-                <div className="card_img">
-                    <img src={props.img} alt="img-1" />
+    return (
+        <div className="card">
+            <div className="card_img">
+                <img src={props.img} alt="img-1" />
+            </div>
+            <div className="card_info">
+                <div className="card_title">
+                    <h3>{props.title}</h3>
+                    {props.status && <Status/>}
                 </div>
-                <div className="card_info">
-                    <div className="card_title">
-                        <h3>{props.title}</h3>
-                        <Status></Status>
-                    </div>
-                    <div className="card_artist">
-                        <p>{props.artist}</p>
-                    </div>
-                    <div className="card_date">
-                        <p>{props.date} ngày trước</p>     
-                    </div>
+                <div className="card_artist">
+                    <p>{props.artist}</p>
+                </div>
+                <div className="card_date">
+                    <p>{props.date} ngày trước</p>     
                 </div>
             </div>
-        )
-    }
-    else {
-        return (
-            <div className="card">
-                <div className="card_img">
-                    <img src={props.img} alt="img-1" />
-                </div>
-                <div className="card_info">
-                    <div className="card_title">
-                        <h3>{props.title}</h3>
-                    </div>
-                    <div className="card_artist">
-                        <p>{props.artist}</p>
-                    </div>
-                    <div className="card_date">
-                        <p>{props.date} ngày trước</p>     
-                    </div>
-                </div>
-            </div>
-        )
-    }  
+        </div>
+    )
 }
 
 function AlbumCard(props) {
