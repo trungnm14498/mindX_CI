@@ -1,25 +1,24 @@
-import './style.css'
+import './style.scss'
 
-function InputItem() {
+function InputItem({addTask}) {
     return (
         <div className='input_field'>
-            <input type="text" className="input_item" placeholder='Enter your task here ...'/>
+            <input type="text" className="input_item" placeholder='Enter your task here ...'
+            onKeyDown={(event) => addTask(event)}/>
         </div>
     )
 }
 
-function Checkbox() {
-    return (            
-        <span class="checkmark"></span>
-    )
-}
-
-function TodolistItem(props) {
+function TodolistItem({id, text, checkedTask, isCompleted, updateTasks}) {
     return (
         <div className="content">
-            <input type="checkbox" className="checkbox"/>
-            {Checkbox()}      
-            <div className="item">{props.text}</div>
+            <div class="form-check" onClick={checkedTask}>
+                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id={id} checked={isCompleted} onChange={(event) => updateTasks(event.target.checked, id)}
+                />
+                <label class="form-check-label item" for="flexRadioDefault1">
+                    {text}
+                </label>
+            </div>
         </div>
     )
 }
