@@ -1,0 +1,25 @@
+.title_container {
+    margin: 20px auto;
+}
+
+.title_name {
+    display: inline;
+    margin: 0;
+    color: #FFF;
+}
+
+.showAll {
+    color: #c2c0c8;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.showAll:hover {
+    color: #c273ed;
+}
+
+.showAll a{
+    text-decoration: none;
+    margin-right: 5px;
+}

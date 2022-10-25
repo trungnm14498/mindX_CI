@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    width: 1450px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.SplitPane {
+    gap: 20px
+}
+
+.SplitPane-left {
+    float: left;
+    width: 50%;
+}
+
+.SplitPane-right {
+    float: right;
+    width: 50%;
+}
+
+.split_container {
+    background-color: #443E4E;
+    border-radius: 18px;
+    padding: 20px 0px 5px;
+    width: 650px;
+    max-width: 100%;
+}
+
+.split_container .card_container:last-child {
+    margin-bottom: 10px;
+}
