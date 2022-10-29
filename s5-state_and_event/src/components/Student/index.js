@@ -5,7 +5,6 @@ function Student() {
     const [student, setStudent] = useState({name: "Kiritsu", age: 24});
     const increaseAge = () => {
         setStudent({...student, age: student.age + 1});
-        console.log(student.age);
     }
 
     const resetStudent = () => {

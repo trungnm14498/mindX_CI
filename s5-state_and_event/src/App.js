@@ -2,7 +2,7 @@ import './App.css';
 import Light from './components/Light';
 import Counter from './components/Counter';
 import Student from './components/Student';
-import StudentClass from './components/Student Class';
+import StudentClass from './components/StudentClass';
 
 function App() {
   return (

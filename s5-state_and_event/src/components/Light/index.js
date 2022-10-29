@@ -19,7 +19,6 @@ function Light() {
         setColor2('off');
         setColor3('off');
         setStatus(1);
-        console.log(status);
     }
     
     const changeColor = () => {
@@ -28,15 +27,12 @@ function Light() {
             setColor1('off');
             setColor3('off');
             setStatus(2);
-            console.log(status);
         }
         if (status === 2) {
             setColor3('green');
             setColor1('off');
             setColor2('off');
             setStatus(3);
-            console.log(status);
-
         }
         if (status === 3) {
             startColor()
