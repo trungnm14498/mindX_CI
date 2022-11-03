@@ -1,0 +1,136 @@
+.header-container {
+    position: absolute;
+    margin: 22px;
+    color: white;
+}
+
+.header-add h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.header-container .header-icon {
+    margin-right: 115px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.add-trans-info {
+    position: absolute;
+    width: 358px;
+    height: 544px;
+    left: 30px;
+    top: 91px;
+    background: #FFFFFF;
+    box-shadow: 0px 22px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.add-trans-container {
+    padding: 30px 20px;
+}
+
+.add-trans-type {
+    width: 323px;
+    height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #F4F7F6;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+.add-trans-type button{
+    height: 35px;
+    width: 42%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.income-trans {
+    color: #438883;
+    background-color: rgba(67, 136, 131, 0.1);;
+}
+
+.expense-trans {
+    color: #F95B51;
+    background-color: rgba(249, 91, 81, 0.1);
+}
+
+.type-hidden {
+    background-color: transparent;
+}
+
+.add-trans-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.add-trans-form label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.06em;
+    color: #666666;
+}
+
+.add-trans-form input {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 318px;
+    height: 50px;
+    border: 1.4px solid #DDD;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-break: loose;
+    color: #438883;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.add-trans-form input:hover {
+    border: 2px solid #438883;
+}
+
+.add-trans-form input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.add-trans-form #note {
+    height: 80px;
+}
+
+.add-trans-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #438883;
+    border-radius: 99999px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #438883;
+    cursor: pointer;
+}

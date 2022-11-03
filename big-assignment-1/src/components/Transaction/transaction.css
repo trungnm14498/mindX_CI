@@ -1,0 +1,83 @@
+.transaction-container {
+    padding: 22px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header h2 {
+    margin: auto;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.header-icon {
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+.transaction-tags {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 30px;
+}
+
+.transaction-btn {
+    padding: 10px 20px;
+    min-width: 95px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #000;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.transaction-total  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.total {
+    background-color: #2F7E79;
+    border-radius: 20px;
+}
+
+.income-total  {
+    padding: 0 50px 20px 20px;
+}
+
+.expense-total {
+    padding: 0 20px 20px 45px;
+}
+
+h2.transaction-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+    color: #248b84;
+}
+
+.transaction-detail {
+    margin-bottom: 30px;
+}
+
+.transaction-main-container {
+    height: 535px;
+    overflow-y: scroll;
+}
+
+.active {
+    background-color: #438883;
+    color: white;
+}

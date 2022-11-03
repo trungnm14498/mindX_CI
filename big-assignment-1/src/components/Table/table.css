@@ -1,0 +1,36 @@
+.table {
+    padding: 10px 25px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-top: 150px; */
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+}
+
+.table-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.table-detail {
+    box-sizing: border-box;
+    padding: 15px 10px 0px 20px;
+    height: 340px;
+    width: 100%;
+    background-color: #FBFBFB;
+    overflow-y: scroll;
+    border-radius: 20px;
+}

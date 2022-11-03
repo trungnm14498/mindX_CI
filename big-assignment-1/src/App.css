@@ -1,0 +1,94 @@
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 420px;
+  height: 100vh;
+  background-color: white;
+}
+
+.balance-detail {
+  height: 515px;
+  padding: 22px;
+  margin-top: 100px;
+  overflow-y: scroll;
+}
+
+.balance-detail_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.balance-detail_title h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #222222;
+}
+
+.balance-detail_title a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #666666;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  height: 80px;
+  background: #FFF;
+  box-shadow: 0px -2px 25px rgba(0, 0, 0, 0.08);
+}
+
+.add-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  left: 172px;
+  top: 88vh;
+  background: #438883;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  box-shadow: 3px 5px 30px #629c98;
+  cursor: pointer;
+}
+
+.add-icon {
+  color: #FFF;
+  font-size: 40px;
+}
+
+.menu-btn {
+  display: flex;
+  font-size: 35px;
+  gap: 200px;
+  color: #AAA;
+}
+
+.btn-icon {
+  cursor: pointer;
+  color: #AAA;
+}
+
+.btn-icon_active {
+  color: #438883;
+}
