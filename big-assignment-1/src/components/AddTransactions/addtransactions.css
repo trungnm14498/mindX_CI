@@ -1,3 +1,9 @@
+.addtrans-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
 .header-container {
     position: absolute;
     margin: 22px;
@@ -32,7 +38,7 @@
     padding: 30px 20px;
 }
 
-.add-trans-type {
+.add-trans-type-1 {
     width: 323px;
     height: 48px;
     display: flex;
@@ -43,7 +49,7 @@
     margin-bottom: 30px;
 }
 
-.add-trans-type button{
+.add-trans-type-1 button{
     height: 35px;
     width: 42%;
     border-radius: 20px;
@@ -133,4 +139,20 @@ input[type=number] {
     font-size: 18px;
     color: #438883;
     cursor: pointer;
+}
+
+.add-trans-btn:hover {
+    color: white;
+    background-color: #438883;
+}
+
+.transaction-noti {
+    display: inline-block;
+    text-align: left;
+    margin-top: 25px;
+    text-transform: none;
+    line-height: 1.4;
+    letter-spacing: .25px;
+    font-weight: 500;
+    color: #002614;
 }

@@ -1,9 +1,9 @@
 import './transaction.css';
 import Item from '../Item/item';
-import {FaChevronLeft} from "react-icons/fa";
 import {Tag} from '../Tag/tag';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 
 function Transaction({items}) {
     const incomes  = items.filter(item => item.type === "income");
@@ -76,6 +76,7 @@ function Transaction({items}) {
     const byMonth = groupBy(items,v => v.date.slice(3));
     const byYear = groupBy(items,v => v.date.slice(-4));
 
+    
     const initValue = () => {
         const dayKeys = Object.keys(byDay);
         const result1 = [];
@@ -91,8 +92,12 @@ function Transaction({items}) {
     }
 
     const [categories, setCategories] = useState(transactionDay);
-    const [transactionItems, setTransactionItems] = useState(initValue);
+    const [transactionItems, setTransactionItems] = useState(initValue());
     const [status, setStatus] = useState(0);
+
+    // console.log(transactionItems);
+    // console.log(transactionDay);
+    console.log(transactionItems[0]);
 
     const filterDay = () => {
         setCategories(transactionDay);
@@ -135,7 +140,6 @@ function Transaction({items}) {
     return (
         <div className='transaction-container'>
             <header>
-            <Link to="/"><FaChevronLeft className='header-icon'/></Link>
             <h2>all transaction</h2>
             </header>
             <section className='transaction-tags'>

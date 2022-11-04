@@ -1,3 +1,8 @@
+.statistics-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .statistics-heading {
     font-weight: 600;
     font-size: 18px;

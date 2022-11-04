@@ -111,6 +111,34 @@ const data = [
         date: "15 June, 2021",
         type: "expense"
     },
+    {   
+        id: 17,
+        name: "Buy Clothing",
+        amount: 250.8,
+        date: "28 April, 2021",
+        type: "expense"
+    },
+    {   
+        id: 18,
+        name: "First Month Salary",
+        amount: 1320,
+        date: "15 April, 2022",
+        type: "income"
+    },
+    {   
+        id: 19,
+        name: "Keycap",
+        amount: 2141,
+        date: "10 March, 2022",
+        type: "expense"
+    },
+    {   
+        id: 20,
+        name: "Vietlot",
+        amount: 8141.53,
+        date: "20 July, 2022",
+        type: "income"
+    },
 ]
 
 export default data;

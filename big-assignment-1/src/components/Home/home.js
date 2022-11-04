@@ -1,25 +1,23 @@
-import data from '../../data';
 import Item from '../Item/item';
 import Homepage from '../Homepage/homepage';
-import MainMenu from '../MainMenu/mainmenu';
-import { useState } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import DataContext from '../../DataContext';
 
-function Home({items}) {
-    
+function Home() {
+    const { items } = useContext(DataContext);
     return (
-        <main className="main-container">
+        <main>
             <div>
-                <Homepage items={items}/>
+                <Homepage items={items} />
                 <div className="balance-detail">
                     <div className="balance-detail_title">
-                    <h4>transactions history</h4>
-                    <Link to="/allTransactions">See All</Link>
+                        <h4>transactions history</h4>
+                        <Link to="/allTransactions">See All</Link>
                     </div>
-                    <Item items={items}/>
+                    <Item items={items} canDeleteItem={true} />
                 </div>
-          </div>
-            <MainMenu/>
+            </div>
         </main>
     );
 }

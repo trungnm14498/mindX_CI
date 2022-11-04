@@ -1,16 +1,11 @@
 import Transaction from "../Transaction/transaction";
-import MainMenu from "../MainMenu/mainmenu";
-import Header from "../Header/header";
-import data from "../../data";
-import { useState } from "react";
+import { useContext } from "react";
+import DataContext from "../../DataContext";
 
 function AllTransactions() {
-    const [items, setItems] = useState(data);
+    const { items } = useContext(DataContext);
     return (
-        <main className="main-container">
-            <Transaction items={items}/>
-            <MainMenu/>
-        </main>
+        <Transaction items={items} />
     )
 }
 
