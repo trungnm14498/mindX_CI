@@ -22,3 +22,7 @@
 .top-btn:hover .top-btn--icon {
     color: white;
 }
+
+button:focus {
+    outline: none;
+}
