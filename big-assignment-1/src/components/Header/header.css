@@ -1,0 +1,43 @@
+.main-header {
+    position: relative;
+    width: 100%;
+    height: 175px;
+    border-bottom-left-radius: 12%;
+    border-bottom-right-radius: 12%;
+    background: linear-gradient(138.73deg, #429690 -4.35%, #2A7C76 100.15%);
+  }
+  
+.ellipse {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.05;
+    background: transparent;
+    border: 10px solid rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+.ellipse-1 {
+    width: 85px;
+    height: 85px;
+    left: 127px;
+    top: -35px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 6.82%, rgba(255, 255, 255, 0.7) 114.2%);
+}
+
+.ellipse-2 {
+    width: 127px;
+    height: 127px;
+    left: 55px;
+    top: -33px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 6.82%, rgba(255, 255, 255, 0.7) 114.2%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.ellipse-3 {
+    width: 212px;
+    height: 212px;
+    left: -29px;
+    top: -65px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 6.82%, rgba(255, 255, 255, 0.7) 114.2%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
