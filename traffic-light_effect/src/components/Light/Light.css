@@ -1,0 +1,31 @@
+.light-wrapper {
+    width: 115px;
+    height: 115px;
+    border-radius: 20px;
+    border: solid #4C4C4C 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #4C4C4C;
+}
+
+.light.red-light.on {
+    background-color: red;
+    box-shadow: 0 0 20px #FE0002;
+}
+
+.light.yellow-light.on {
+    background-color: yellow;
+    box-shadow: 0 0 20px #FFD140;
+}
+
+.light.green-light.on {
+    background-color: green;
+    box-shadow: 0 0 20px #01E924;
+}

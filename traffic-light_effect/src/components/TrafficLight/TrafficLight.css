@@ -1,0 +1,29 @@
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(45, 44, 44);
+    border-radius: 20px;
+    padding: 30px 18px;
+    gap: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.number {
+    color:#fda01d;
+    background-color: transparent;
+    text-shadow: 0 0 20px #fe9400;
+    font-size: 102px;
+    margin-top: 10px;
+}
