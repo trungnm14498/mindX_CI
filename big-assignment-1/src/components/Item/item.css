@@ -1,0 +1,49 @@
+.item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-container article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.item-container article:hover {
+    background-color: #d6d3d3;
+    cursor: pointer;
+}
+
+.item-name {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    margin-bottom: 5px;
+}
+
+.item-date {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #666666;
+}
+
+.item-amount {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: -0.04em;
+}
+
+.item-icon {
+    color: #f52d1e;
+}
